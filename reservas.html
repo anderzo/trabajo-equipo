@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<header>
+    <h1>Reservas</h1>
+</header>
+<nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="menu.html"> Menu</a></li>
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+<body>
+    <fieldset>
+        <legend>Formulario de reserva</legend>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" minlength="3" maxlength="50" required>
+
+        <label for="fecha">Fecha de reserva:</label>
+        <input type="date" id="fecha" name="fecha" min="2026-09-29" required>
+
+        <label for="hora">Hora de reserva:</label>
+        <input type="time" id="hora" name="hora" min="08:00" max="21:00">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" pattern=" \+504 [0-9]{4}-[0-9]{4}" placeholder="+504 1234-5678">
+
+        <label for="personas">Número de personas:</label>
+        <input type="number" id="personas" name="personas" min="1" max="30">
+
+        <button type="button">Reservar </button>
+
+    </form>
+    </fieldset>
+    <p><strong>Nota:</strong> Las reservas se realizan con un mínimo de 24 horas de anticipación.</p>
+    <h4>Te esperamos en nuestro restaurante para disfrutar de una experiencia culinaria única.</h4>
+    <footer>&copy; 2026 Sabor de la costa. Todos los derechos reservados.</footer>
+</body>
+</html>
